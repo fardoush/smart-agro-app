@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Questrial&family=Yellowtail&display=swap');
+@import "tailwindcss";
+
+
+@theme {
+  --font-body: "Livvic", sans-serif;
+  --font-heading: "Questrial", sans-serif;
+  --font-script: "Yellowtail", cursive;
+
+  /* color  */
+  --color-primary: #334B35;
+  --color-primary-dark: #263C28;
+  --color-secondary: #5C7A45;
+
+  --color-accent: #D9A441;
+  --color-accent-light: #E9C46A;
+
+  --color-bg-main: #F5F0E5;
+  --color-bg-section: #3B563C;
+  --color-bg-card: #4B674A;
+
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #D9E0D5;
+  --color-text-muted: #AAB7A2;
+}
