@@ -6,6 +6,7 @@ import VideoBanner from '../../components/VideoBanner';
 import OurProjects from '../../components/OurProjects/OurProjects';
 import Testimonial from '../../components/Testimonial';
 import BrandSlider from '../../components/BrandSlider';
+import Contact from '../../components/Contact';
 
 const Home = () => {
     return (
@@ -16,6 +17,7 @@ const Home = () => {
             <VideoBanner/>
             <OurProjects/>
             <Testimonial/>
+            <Contact/>
             <BrandSlider/>
             
         </div>

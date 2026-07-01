@@ -44,9 +44,15 @@ const Hero = () => {
           </p>
 
           {/* Button */}
-          <button className="mt-8 md:px-11 md:py-5 px-8 py-3 bg-[#F6C453] rounded-full text-black font-body font-semibold hover:bg-yellow-500 duration-300">
+          {/* <button className="mt-8 md:px-11 md:py-5 px-8 py-3 bg-[#F6C453] rounded-full text-black font-body font-semibold hover:bg-yellow-500 duration-300">
             DISCOVER MORE
-          </button>
+          </button> */}
+          <button
+              type="submit"
+              className="mt-8 bg-[#f2be5c] hover:bg-[#e5a93b] text-primary-dark font-bold text-xs sm:text-sm uppercase tracking-wider px-8 py-4 sm:py-5 rounded-full shadow-md hover:shadow-xl transform hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300"
+            >
+              DISCOVER MORE
+            </button>
         </div>
       </div>
     </section>
