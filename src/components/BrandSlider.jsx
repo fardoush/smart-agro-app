@@ -20,7 +20,7 @@ const BrandSlider = () => {
   ];
 
   return (
-    <div className="bg-primary border-t-1 border-white/20 py-10 md:py-[60px] lg:py-[100px]">
+    <div className="bg-primary border-t-1 border-white/20 py-10 md:py-[60px] lg:py-[100px] px-5 md:px-10">
       <div className="max-w-[1440px] mx-auto">
 
         <Swiper

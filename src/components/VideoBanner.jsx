@@ -15,9 +15,9 @@ const VideoBanner = () => {
         }}
       />
 
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 relative z-10 grid grid-cols-1 md:grid-cols-2 gap-8 items-center w-full">
+      <div className="max-w-[1440px] mx-auto  px-5 md:px-10 relative z-10 grid grid-cols-1 md:grid-cols-2 gap-8 items-center w-full">
         {/* right side*/}
-        <div className="text-white max-w-lg  md:max-w-xl mx-auto md:text-left text-center  ">
+        <div className="text-white max-w-lg md:max-w-xl mx-auto md:text-left text-center  ">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight drop-shadow-md ">
             Agriculture Matters to the Future of Bangladesh
           </h1>
@@ -43,7 +43,8 @@ const VideoBanner = () => {
         <div
           //   video modal close
           onClick={() => setIsOpen(false)}
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/85 backdrop-blur-sm p-4 transition-opacity duration-300">
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/85 backdrop-blur-sm p-4 transition-opacity duration-300"
+        >
           {/* modal content  */}
           <div
             onClick={(e) => e.stopPropagation()}

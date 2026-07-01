@@ -17,21 +17,21 @@ const Contact = () => {
     });
   };
   return (
-    <div className=" bg-primary py-10 md:py-[60px] lg:py-[100px]">
-      <div className="max-w-[1440px] mx-auto grid lg:gap-16 grid-cols-1 md:grid-cols-2">
+    <div className=" bg-primary py-10 md:py-[60px] lg:py-[100px] px-5 md:px-10">
+      <div className="max-w-[1440px] mx-auto grid gap-8 lg:gap-16 grid-cols-1 md:grid-cols-2">
         {/* left side  */}
         <div className="flex flex-col text-white max-w-xl">
           <span className="mb-3 lg:mb-4 text-xs font-semibold tracking-widest opacity-80 uppercase">
             Contact Now
           </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-10 ">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-10 ">
             GET IN TOUCH NOW
           </h2>
-          <p className="text-[18px] mb-10 font-heading">
+          <p className="text-[18px] mb-6 md:mb-10 font-heading">
             Lorem ipsum dolor sit amet, adipiscing elit. In hac habitasse platea
             dictumst. Duis porta,quam ut finibus ultrices.
           </p>
-          <div className="space-y-10">
+          <div className="space-y-5 lg:space-y-10">
             <div className="">
               <span className="text-sm uppercase font-body mb-2">phone</span>
               <p className="text-xl mb-3 font-medium">+880123456789</p>
@@ -52,7 +52,7 @@ const Contact = () => {
         </div>
         {/* Right side  */}
         <div className="">
-          <form onSubmit={handleContactForm} className="space-y-8">
+          <form onSubmit={handleContactForm} className="space-y-5 lg:space-y-8">
             <div className="w-full">
               <input
                 type="text"
