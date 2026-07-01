@@ -97,7 +97,7 @@ const OurProjects = () => {
             640: { slidesPerView: 2.2, spaceBetween: 20 },
             1024: { slidesPerView: 4, spaceBetween: 24 },
           }}
-          modules={[FreeMode, Pagination,Autoplay]}
+          modules={[FreeMode, Pagination, Autoplay]}
           className="mySwiper !pb-14"
         >
           {productSlider.map((slider) => (

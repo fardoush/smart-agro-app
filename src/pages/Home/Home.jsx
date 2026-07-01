@@ -4,6 +4,8 @@ import Hero from '../../components/HomeSections/Hero';
 import PopularFoodSection from '../../components/HomeSections/PopularFood/PopularFoodSection';
 import VideoBanner from '../../components/VideoBanner';
 import OurProjects from '../../components/OurProjects/OurProjects';
+import Testimonial from '../../components/Testimonial';
+import BrandSlider from '../../components/BrandSlider';
 
 const Home = () => {
     return (
@@ -13,6 +15,8 @@ const Home = () => {
             <PopularFoodSection/>
             <VideoBanner/>
             <OurProjects/>
+            <Testimonial/>
+            <BrandSlider/>
             
         </div>
     );
