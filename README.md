@@ -20,10 +20,10 @@ Smart Agro is a premium, high-performance, and fully responsive Single Page Appl
 
 ## 🛠️ Tech Stack Used
 
-* **Frontend:** React (Vite / CRA)
+* **Frontend:** React (Vite)
 * **Styling:** Tailwind CSS (with utility classes like `calc()` for exact viewport alignment)
 * **Navigation & Scrolling:** `react-scroll`
-* **Icons:** `react-icons` (Ci, Rx, Fa libraries)
+* **Icons:** `react-icons` 
 * **Router Router**
 * **Hosting:** Netlify
 
