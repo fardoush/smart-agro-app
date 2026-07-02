@@ -47,7 +47,7 @@ const AboutSection = () => {
           <h4 className="text-2xl md:text-3xl text-accent font-body mb-3 md:mb-5">
             We’re Leader in Agriculture Market
           </h4>
-          <p className="text-base mx-w-4xl  mb-6 md:mb-12">
+          <p className="text-lg mx-w-4xl font-heading mb-6 md:mb-12">
             There are many variations of passages of available but the majority
             have suffered alteration in some form, by injected humou or
             randomised words even slightly believable.

@@ -1,8 +1,19 @@
 import React from "react";
 import { FaFacebookF, FaTwitter, FaYoutube, FaInstagram } from "react-icons/fa";
 import Logo from "../Logo/Logo";
+import { Link } from "react-scroll";
 
 const Footer = () => {
+  const footerLinks = [
+    { name: "Home", to: "home" },
+    { name: "About Us", to: "about" },
+    { name: "Our Products", to: "products" },
+    { name: "Projects", to: "projects" },
+    { name: "Services", to: "services" },
+    { name: "News", to: "news" },
+    { name: "Contact Us", to: "contact" },
+  ];
+
   const handleNewsletterSubmit = (e) => {
     e.preventDefault();
     const email = e.target.newsletterEmail.value;
@@ -13,27 +24,47 @@ const Footer = () => {
   return (
     <footer className="bg-primary text-white pt-16 pb-8 px-5 md:px-10 border-t border-white/10">
       <div className="max-w-[1440px] mx-auto">
-        
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16 pb-12 border-b border-white/10">
-          
           <div className="flex flex-col max-w-md">
-            <Logo/>
+            <Link
+              to="home"
+              spy={true}
+              smooth={true}
+              offset={-110}
+              duration={500}
+              className="cursor-pointer inline-block"
+            >
+              <Logo />
+            </Link>
+
             <p className="mt-3 text-white/70 text-base leading-relaxed mb-6 font-heading">
-              Lorem ipsum dolor sit amet, adipiscing elit. In hac habitasse platea
-              dictumst. Duis porta, quam ut finibus ultrices.
+              Lorem ipsum dolor sit amet, adipiscing elit. In hac habitasse
+              platea dictumst. Duis porta, quam ut finibus ultrices.
             </p>
 
             <div className="flex items-center gap-4">
-              <a href="#" className="text-white/80 hover:text-[#e5a93b] text-lg transition-colors duration-300">
+              <a
+                href="#"
+                className="text-white/80 hover:text-[#e5a93b] text-lg transition-colors duration-300"
+              >
                 <FaFacebookF />
               </a>
-              <a href="#" className="text-white/80 hover:text-[#e5a93b] text-lg transition-colors duration-300">
+              <a
+                href="#"
+                className="text-white/80 hover:text-[#e5a93b] text-lg transition-colors duration-300"
+              >
                 <FaTwitter />
               </a>
-              <a href="#" className="text-white/80 hover:text-[#e5a93b] text-lg transition-colors duration-300">
+              <a
+                href="#"
+                className="text-white/80 hover:text-[#e5a93b] text-lg transition-colors duration-300"
+              >
                 <FaYoutube />
               </a>
-              <a href="#" className="text-white/80 hover:text-[#e5a93b] text-lg transition-colors duration-300">
+              <a
+                href="#"
+                className="text-white/80 hover:text-[#e5a93b] text-lg transition-colors duration-300"
+              >
                 <FaInstagram />
               </a>
             </div>
@@ -44,24 +75,22 @@ const Footer = () => {
               Useful Links
             </h3>
             <ul className="space-y-3.5 text-white/70 text-base font-heading">
-              <li>
-                <a href="#" className="hover:text-[#e5a93b] transition-colors duration-300">New Projects</a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-[#e5a93b] transition-colors duration-300">Our Services</a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-[#e5a93b] transition-colors duration-300">Testimonials</a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-[#e5a93b] transition-colors duration-300">About Us</a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-[#e5a93b] transition-colors duration-300">Contact us</a>
-              </li>
+              {footerLinks.map((link, index) => (
+                <li key={index}>
+                  <Link
+                    to={link.to}
+                    spy={true}
+                    smooth={true}
+                    offset={-110}
+                    duration={600}
+                    className="hover:text-[#e5a93b] transition-colors duration-300 cursor-pointer block"
+                  >
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
-
 
           <div className="flex flex-col">
             <h3 className="font-heading text-lg font-bold tracking-wider uppercase mb-6 text-white">
@@ -70,9 +99,11 @@ const Footer = () => {
             <p className="font-body text-white/70 text-base leading-relaxed mb-6">
               Subscribe to our weekly Newsletter and receive updates via email.
             </p>
-            
 
-            <form onSubmit={handleNewsletterSubmit} className="relative w-full max-w-sm flex items-center">
+            <form
+              onSubmit={handleNewsletterSubmit}
+              className="relative w-full max-w-sm flex items-center"
+            >
               <input
                 type="email"
                 name="newsletterEmail"
@@ -90,17 +121,25 @@ const Footer = () => {
           </div>
         </div>
 
-
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-white/50">
           <p className="text-center sm:text-left">
             Copyright ©Smart Agro. All Rights Reserved.
           </p>
           <div className="flex items-center gap-6">
-            <a href="#" className="hover:text-[#e5a93b] transition-colors duration-300">Terms & Conditions</a>
-            <a href="#" className="hover:text-[#e5a93b] transition-colors duration-300">Privacy Policy</a>
+            <a
+              href="#"
+              className="hover:text-[#e5a93b] transition-colors duration-300"
+            >
+              Terms & Conditions
+            </a>
+            <a
+              href="#"
+              className="hover:text-[#e5a93b] transition-colors duration-300"
+            >
+              Privacy Policy
+            </a>
           </div>
         </div>
-
       </div>
     </footer>
   );

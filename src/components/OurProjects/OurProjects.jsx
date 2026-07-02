@@ -5,6 +5,7 @@ import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import { FreeMode, Pagination, Autoplay } from "swiper/modules";
 import projectShape from "/project-shape.png";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const productSlider = [
   {
@@ -71,7 +72,7 @@ const productSlider = [
 
 const OurProjects = () => {
   return (
-    <div className="relative bg-primary flex justify-center items-center flex-col pt-[78px] pb-[100px] px-5 md:px-10 overflow-hidden">
+    <div className="relative bg-primary flex justify-center items-center flex-col py-10 md:py-[60px] lg:pt-[78px] lg:pb-[100px] px-5 md:px-10 overflow-hidden">
       <span className="mb-3 lg:mb-4 text-white text-xs font-semibold tracking-widest opacity-80 uppercase">
         RECENTLY COMPLETED WORK
       </span>
@@ -125,7 +126,7 @@ const OurProjects = () => {
                     </h3>
                     {/* arrow btn */}
                     <span className="text-[#e5a93b] text-xl transform translate-x-[-5px] group-hover:translate-x-0 transition-transform duration-300">
-                      ➔
+                      <FaArrowRightLong/>
                     </span>
                   </div>
                 </div>

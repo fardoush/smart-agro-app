@@ -5,7 +5,7 @@ import leafShape from "/leaf-shape.svg";
 
 const Hero = () => {
   return (
-    <section className="relative h-[600px] md:h-[700px]">
+    <section className="relative h-[calc(100vh-80px)] lg:h-[calc(100vh-110px)]">
       <img
         src={banner}
         alt=""
