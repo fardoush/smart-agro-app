@@ -1,16 +1,31 @@
-# React + Vite
+# 🌾 Smart Agro - Modern Agriculture Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Smart Agro is a premium, high-performance, and fully responsive Single Page Application (SPA) designed for modern agricultural businesses. Built using **React** and **Tailwind CSS**, this platform showcases agricultural products, ongoing ventures, blog articles, and an interactive contact module with dynamic navigation features.
 
-Currently, two official plugins are available:
+🔗 **Live Link:** [View Live Site](https://glittering-chebakia-9b054e.netlify.app/)
+**Figma :**  Figma Community
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Key Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Premium Full-Screen Overlay Menu:** A modern, mobile-first navigation drawer built elegantly for smaller viewports.
+* **Active Section Tracking (Spy Mode):** Dynamic scroll-spy implementation that automatically highlights the active section color in the menu bar as you scroll.
+* **Smooth Anchor Navigation:** Seamless, glitch-free animated scrolling across all sections (Hero, About, Products, Projects, News, Contact) powered by `react-scroll`.
+* **Pixel-Perfect Responsive Layout:** Fully optimized for all screen sizes—from large desktop monitors to compact smartphones.
+* **Dynamic UI Elements:** Beautifully structured data rendering for products, projects, and recent news articles to maintain a professional look.
+* **Interactive Call-To-Action (CTA):** Clean and accessible newsletter subscription layouts and contact forms.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack Used
+
+* **Frontend:** React (Vite / CRA)
+* **Styling:** Tailwind CSS (with utility classes like `calc()` for exact viewport alignment)
+* **Navigation & Scrolling:** `react-scroll`
+* **Icons:** `react-icons` (Ci, Rx, Fa libraries)
+* **Router Router**
+* **Hosting:** Netlify
+
+---
+
